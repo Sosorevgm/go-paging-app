@@ -12,4 +12,4 @@ Response example
   ]
 }``
 
-https://capybarainspace.ru/api/users?count=20&offset=0
+Response example: https://capybarainspace.ru/api/users?count=20&offset=0
