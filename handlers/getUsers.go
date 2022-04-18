@@ -17,7 +17,7 @@ func (s Service) GetUsers(c *gin.Context) {
 		offset = "0"
 	}
 
-	var users []models.User
+	var users = make([]models.User, 0)
 	rows, err := s.Db.Query("SELECT * FROM users LIMIT ?,?;", offset, count)
 	if err != nil {
 		c.String(http.StatusBadRequest, err.Error())

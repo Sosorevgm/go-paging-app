@@ -12,7 +12,7 @@ import (
 
 func main() {
 	// load environment
-	err := godotenv.Load("/myexe/paging-users.env")
+	err := godotenv.Load("/path/to.env")
 	if err != nil {
 		log.Fatal(err)
 	}
